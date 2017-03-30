@@ -74,12 +74,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void twoPoints2(View v) {
         setTeamB +=1;
-        displayForSetB(scoreTeamB);
+        displayForSetB(setTeamB);
     }
 
     public void threePoints2(View v) {
         matchTeamB +=1;
-        displayForMatchB(scoreTeamB);
+        displayForMatchB(matchTeamB);
     }
 
 
