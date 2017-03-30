@@ -14,7 +14,7 @@
         android:layout_height="495dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="3dp">
 
 
         <LinearLayout
@@ -35,12 +35,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#8090a4ae"
+                    android:background="@color/Player_background"
                     android:fontFamily="sans-serif"
                     android:gravity="center_horizontal"
-
                     android:padding="4dp"
-                    android:text="Player A"
+                    android:text="@string/Button_text5"
                     android:textColor="@android:color/black"
                     android:textSize="24sp" />
 
@@ -59,32 +58,33 @@
                         <TextView
                             android:id="@+id/team_a_score"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/score_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             android:fontFamily="sans-serif"
+                            android:gravity="center"
                             android:padding="4dp"
                             android:text="0"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/textView1"
+                            android:layout_width="@dimen/display_text_width"
+                            android:layout_height="@dimen/display_text_heigth"
                             android:layout_gravity="center"
-                            android:background="#80FFFFFF"
+                            android:background="@color/Text_background"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="SCORE"
+                            android:text="@string/Button_text1"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <ImageView
                             android:id="@+id/imageView"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             app:srcCompat="@drawable/score" />
@@ -100,7 +100,7 @@
                         <TextView
                             android:id="@+id/set"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/score_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             android:fontFamily="sans-serif"
@@ -111,22 +111,22 @@
                             android:textSize="20sp" />
 
                         <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/textView2"
+                            android:layout_width="@dimen/display_text_width"
+                            android:layout_height="@dimen/display_text_heigth"
                             android:layout_gravity="center"
-                            android:background="#80FFFFFF"
+                            android:background="@color/Text_background"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="SETS"
+                            android:text="@string/Button_text2"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <ImageView
                             android:id="@+id/imageView2"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             app:srcCompat="@drawable/set" />
@@ -142,12 +142,12 @@
                         <TextView
                             android:id="@+id/match"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/score_height"
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:background="#80FFFFFF"
                             android:fontFamily="sans-serif"
-                            android:gravity="center_horizontal"
+                            android:gravity="center"
                             android:padding="4dp"
                             android:text="0"
                             android:textColor="@android:color/black"
@@ -155,21 +155,22 @@
 
                         <TextView
                             android:id="@+id/textView3"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="@dimen/display_text_width"
+                            android:layout_height="@dimen/display_text_heigth"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:background="#80FFFFFF"
+                            android:background="@color/Text_background"
                             android:fontFamily="sans-serif"
+                            android:gravity="center"
                             android:padding="4dp"
-                            android:text="MATCHES"
+                            android:text="@string/Button_text3"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <ImageView
                             android:id="@+id/imageView3"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:background="#80FFFFFF"
@@ -197,10 +198,11 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_margin="10dp"
-                            android:background="#80b2ebf2"
+                            android:background="@color/Button_text_color"
                             android:gravity="center"
                             android:onClick="freeThrow"
-                            android:text="SCORE" />
+                            android:text="SCORE"
+                            android:textSize="25dp" />
 
                     </LinearLayout>
 
@@ -215,11 +217,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:background="#80b2ebf2"
+                            android:layout_margin="10dp"
+                            android:background="@color/Button_text_color"
                             android:gravity="center"
                             android:onClick="twoPoints"
-                            android:layout_margin="10dp"
-                            android:text="SET" />
+                            android:text="@string/Button_text2"
+                            android:textSize="25dp" />
 
                     </LinearLayout>
 
@@ -230,15 +233,16 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/button4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:background="#80b2ebf2"
+                            android:layout_margin="10dp"
+                            android:background="@color/Button_text_color"
                             android:gravity="center"
                             android:onClick="threePoints"
-                            android:layout_margin="10dp"
-                            android:text="MATCH" />
+                            android:text="MATCH"
+                            android:textSize="25dp" />
 
                     </LinearLayout>
 
@@ -267,12 +271,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#8090a4ae"
+                    android:background="@color/Player_background"
                     android:fontFamily="sans-serif"
-
                     android:gravity="center_horizontal"
                     android:padding="4dp"
-                    android:text="Player B"
+                    android:text="@string/Button_text5"
                     android:textColor="@android:color/black"
                     android:textSize="24sp" />
 
@@ -291,32 +294,33 @@
                         <TextView
                             android:id="@+id/team_b_score"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/score_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             android:fontFamily="sans-serif"
+                            android:gravity="center"
                             android:padding="4dp"
                             android:text="0"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:layout_width="@dimen/display_text_width"
+                            android:layout_height="@dimen/display_text_heigth"
                             android:layout_gravity="center"
-                            android:background="#80FFFFFF"
+                            android:background="@color/Text_background"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="SCORE"
+                            android:text="@string/Button_text1"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <ImageView
-                            android:id="@+id/imageView"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:id="@+id/imageView4"
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             app:srcCompat="@drawable/score" />
@@ -332,7 +336,7 @@
                         <TextView
                             android:id="@+id/set2"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/score_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             android:fontFamily="sans-serif"
@@ -343,22 +347,22 @@
                             android:textSize="20sp" />
 
                         <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/textView5"
+                            android:layout_width="@dimen/display_text_width"
+                            android:layout_height="@dimen/display_text_heigth"
                             android:layout_gravity="center"
-                            android:background="#80FFFFFF"
+                            android:background="@color/Text_background"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="SETS"
+                            android:text="@string/Button_text2"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:id="@+id/imageView5"
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
                             android:layout_gravity="center"
                             android:background="#80FFFFFF"
                             app:srcCompat="@drawable/set" />
@@ -374,34 +378,35 @@
                         <TextView
                             android:id="@+id/match2"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/score_height"
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:background="#80FFFFFF"
                             android:fontFamily="sans-serif"
-                            android:gravity="center_horizontal"
+                            android:gravity="center"
                             android:padding="4dp"
                             android:text="0"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="110dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/textView6"
+                            android:layout_width="@dimen/display_text_width"
+                            android:layout_height="@dimen/display_text_heigth"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:background="#80FFFFFF"
+                            android:background="@color/Text_background"
                             android:fontFamily="sans-serif"
+                            android:gravity="center"
                             android:padding="4dp"
-                            android:text="MATCHES"
+                            android:text="@string/Button_text3"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
 
                         <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:id="@+id/imageView6"
+                            android:layout_width="@dimen/image_width"
+                            android:layout_height="@dimen/image_height"
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:background="#80FFFFFF"
@@ -424,15 +429,16 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button4"
+                            android:id="@+id/button5"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="#80b2ebf2"
+                            android:background="@color/Button_text_color"
                             android:onClick="freeThrow2"
-                            android:layout_margin="10dp"
-                            android:text="SCORE" />
+                            android:text="SCORE"
+                            android:textSize="25dp" />
 
                     </LinearLayout>
 
@@ -443,15 +449,16 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/button6"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="#80b2ebf2"
+                            android:background="@color/Button_text_color"
                             android:onClick="twoPoints2"
-                            android:layout_margin="10dp"
-                            android:text="SET" />
+                            android:text="@string/Button_text2"
+                            android:textSize="25dp" />
 
                     </LinearLayout>
 
@@ -462,16 +469,17 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/button7"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:padding="10dp"
                             android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="#80b2ebf2"
-                            android:onClick="threePoints2"
                             android:layout_margin="10dp"
-                            android:text="MATCH" />
+                            android:layout_weight="1"
+                            android:background="@color/Button_text_color"
+                            android:onClick="threePoints2"
+                            android:padding="10dp"
+                            android:text="MATCH"
+                            android:textSize="25dp" />
 
                     </LinearLayout>
 
@@ -490,19 +498,17 @@
             tools:layout_editor_absoluteY="8dp">
 
             <Button
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#80b2ebf2"
+                android:layout_width="@dimen/reset_width"
+                android:layout_height="wrap_content"
+                android:background="@color/Button_text_color"
                 android:gravity="center"
                 android:onClick="reset"
+                android:text="reset"
                 android:textAllCaps="true"
+                android:textSize="22dp"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="20dp"
-                android:text="reset"/>
+                android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
-
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>
