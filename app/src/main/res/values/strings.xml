@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">SquashCounter</string>
-    <string name="Button_text1">SCORE</string>
-    <string name="Button_text2">SETS</string>
-    <string name="Button_text3">MATCH</string>
-    <string name="Button_text4">RESET</string>
-    <string name="Button_text5">Player A</string>
-    <string name="Button_text6">Player B</string>
-
+    <string name="score">SCORE</string>
+    <string name="initial_value">0</string>
+    <string name="sets">SETS</string>
+    <string name="matches">MATCHES</string>
+    <string name="button_reset">RESET</string>
+    <string name="button_match">MATCH</string>
+    <string name="button_set">SET</string>
+    <string name="button_score">SCORE</string>
+    <string name="playerb">Player B</string>
 </resources>

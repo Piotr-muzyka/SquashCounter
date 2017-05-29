@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="display_text_width">110dp</dimen>
-    <dimen name="display_text_heigth">50dp</dimen>
-    <dimen name="score_height">50dp</dimen>
-    <dimen name="reset_width">100dp</dimen>
-    <dimen name="image_height">50dp</dimen>
-    <dimen name="image_width">50dp</dimen>
+    <dimen name="ButtonLayoutMargin">15dp</dimen>
+    <dimen name="ButtonLayoutWidth">100dp</dimen>
+    <dimen name="TextViewWidth">110dp</dimen>
+    <dimen name="ButtonPadding">10dp</dimen>
+    <dimen name="LayoutMarginTop">10dp</dimen>
+    <dimen name="ImageViewHeight">50dp</dimen>
+    <dimen name="ImageViewWidth">50dp</dimen>
+    <dimen name="ScoreTextSize">30sp</dimen>
+    <dimen name="SetsTextSize">20sp</dimen>
+    <dimen name="MatchesTextSize">20sp</dimen>
+    <dimen name="TextViewPadding">4dp</dimen>
+    <dimen name="PlayerTextSize">24sp</dimen>
 </resources>
