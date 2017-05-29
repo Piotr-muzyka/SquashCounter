@@ -1,13 +1,13 @@
 package com.example.android.squashcounter;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA =0;
-    int scoreTeamB =0;
+    int scoreTeamA = 0;
+    int scoreTeamB = 0;
     int setTeamA = 0;
     int setTeamB = 0;
     int matchTeamA = 0;
@@ -53,32 +53,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void freeThrow(View v) {
-        scoreTeamA +=1;
+        scoreTeamA += 1;
         displayForTeamA(scoreTeamA);
     }
 
     public void twoPoints(View v) {
-        setTeamA +=1;
+        setTeamA += 1;
         displayForSetA(setTeamA);
     }
 
     public void threePoints(View v) {
-        matchTeamA +=1;
+        matchTeamA += 1;
         displayForMatchA(matchTeamA);
     }
 
     public void freeThrow2(View v) {
-        scoreTeamB +=1;
+        scoreTeamB += 1;
         displayForTeamB(scoreTeamB);
     }
 
     public void twoPoints2(View v) {
-        setTeamB +=1;
+        setTeamB += 1;
         displayForSetB(setTeamB);
     }
 
     public void threePoints2(View v) {
-        matchTeamB +=1;
+        matchTeamB += 1;
         displayForMatchB(matchTeamB);
     }
 

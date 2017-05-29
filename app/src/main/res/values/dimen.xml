@@ -12,4 +12,7 @@
     <dimen name="MatchesTextSize">20sp</dimen>
     <dimen name="TextViewPadding">4dp</dimen>
     <dimen name="PlayerTextSize">24sp</dimen>
+    <dimen name="ViewMarginTop">10dp</dimen>
+    <dimen name="ViewMarginBottom">70dp</dimen>
+    <dimen name="ViewWidth">1dp</dimen>
 </resources>
