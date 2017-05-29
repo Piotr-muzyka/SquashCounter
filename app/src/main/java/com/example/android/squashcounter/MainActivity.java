@@ -52,36 +52,44 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    public void freeThrow(View v) {
-        scoreTeamA += 1;
-        displayForTeamA(scoreTeamA);
+    public void score(View v) {
+        switch(v.getId()) {
+            case R.id.scoreA:
+                scoreTeamA++;
+                displayForTeamA(scoreTeamA);
+                break;
+            case R.id.scoreB:
+                scoreTeamB++;
+                displayForTeamB(scoreTeamB);
+                break;
+        }
     }
 
-    public void twoPoints(View v) {
-        setTeamA += 1;
-        displayForSetA(setTeamA);
+    public void set(View v) {
+        switch(v.getId()) {
+            case R.id.setA:
+                setTeamA++;
+                displayForSetA(setTeamA);
+                break;
+            case R.id.setB:
+                setTeamB++;
+                displayForSetB(setTeamB);
+                break;
+        }
     }
 
-    public void threePoints(View v) {
-        matchTeamA += 1;
-        displayForMatchA(matchTeamA);
+    public void match(View v) {
+        switch(v.getId()) {
+            case R.id.matchA:
+                matchTeamA++;
+                displayForMatchA(matchTeamA);
+                break;
+            case R.id.matchB:
+                matchTeamB++;
+                displayForMatchB(matchTeamB);
+                break;
+        }
     }
-
-    public void freeThrow2(View v) {
-        scoreTeamB += 1;
-        displayForTeamB(scoreTeamB);
-    }
-
-    public void twoPoints2(View v) {
-        setTeamB += 1;
-        displayForSetB(setTeamB);
-    }
-
-    public void threePoints2(View v) {
-        matchTeamB += 1;
-        displayForMatchB(matchTeamB);
-    }
-
 
     public void reset(View v) {
         scoreTeamA = 0;

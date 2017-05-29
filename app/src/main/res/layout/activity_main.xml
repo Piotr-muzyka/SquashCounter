@@ -181,14 +181,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/Button"
+                            android:id="@+id/scoreA"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_margin="@dimen/LayoutMarginTop"
                             android:background="@color/colorButton"
                             android:gravity="center"
-                            android:onClick="freeThrow"
+                            android:onClick="score"
                             android:text="@string/score" />
                     </LinearLayout>
 
@@ -199,14 +199,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/Button2"
+                            android:id="@+id/setA"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_margin="@dimen/LayoutMarginTop"
                             android:background="@color/colorButton"
                             android:gravity="center"
-                            android:onClick="twoPoints"
+                            android:onClick="set"
                             android:text="@string/button_set" />
                     </LinearLayout>
 
@@ -217,14 +217,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/Button3"
+                            android:id="@+id/matchA"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_margin="@dimen/LayoutMarginTop"
                             android:background="@color/colorButton"
                             android:gravity="center"
-                            android:onClick="threePoints"
+                            android:onClick="match"
                             android:text="@string/button_match" />
                     </LinearLayout>
                 </LinearLayout>
@@ -400,14 +400,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button4"
+                            android:id="@+id/scoreB"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_margin="@dimen/LayoutMarginTop"
                             android:layout_weight="1"
                             android:background="@color/colorButton"
-                            android:onClick="freeThrow2"
+                            android:onClick="score"
                             android:text="@string/button_score" />
                     </LinearLayout>
 
@@ -418,14 +418,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button5"
+                            android:id="@+id/setB"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_margin="@dimen/LayoutMarginTop"
                             android:layout_weight="1"
                             android:background="@color/colorButton"
-                            android:onClick="twoPoints2"
+                            android:onClick="set"
                             android:text="@string/button_set" />
                     </LinearLayout>
 
@@ -436,13 +436,13 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button6"
+                            android:id="@+id/matchB"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_margin="@dimen/LayoutMarginTop"
                             android:background="@color/colorButton"
-                            android:onClick="threePoints2"
+                            android:onClick="match"
                             android:padding="@dimen/ButtonPadding"
                             android:text="@string/button_match" />
                     </LinearLayout>
